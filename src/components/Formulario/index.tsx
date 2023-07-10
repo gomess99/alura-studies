@@ -1,13 +1,14 @@
 import React from "react";
 import Botao from "../Botao";
+import './style.scss';
 
 class Formulario extends React.Component {
   //aqui será criado um formulário que ele extende de um componente react
   render(): React.ReactNode {
     return (
-      <form>
+      <form className="novaTarefa">
 
-        <div>
+        <div className="inputContainer">
           <label htmlFor="tarefa">
             Adiciona um novo estudo
           </label>
@@ -20,7 +21,7 @@ class Formulario extends React.Component {
            />
         </div>
 
-        <div>
+        <div className="inputContainer">
           <label htmlFor="tempo">
             Tempo
           </label>
