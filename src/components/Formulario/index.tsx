@@ -4,7 +4,7 @@ import style from './Formulario.module.scss';
 
 class Formulario extends React.Component {
   //aqui será criado um formulário que ele extende de um componente react
-  render(): React.ReactNode {
+  render(){
     return (
       <form className={style.novaTarefa}>
 
@@ -36,7 +36,9 @@ class Formulario extends React.Component {
            />
         </div>
 
-        <Botao />
+        <Botao>
+            Adicionar
+        </Botao>
       </form>
     );
   }
